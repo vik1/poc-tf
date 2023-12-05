@@ -1,0 +1,21 @@
+---
+resource_group: rg1
+location: East US
+virtual_network: vnet-test
+vnet_address_space: 10.0.0.0/16
+subnet: subnet-test
+subnet_address_space: 10.0.1.0/24
+app_vms:
+- name: app-1
+  vm_size: Standard_E2s_v3
+  admin_username: vikrant
+  admin_password: admin@123
+- name: app-2
+  vm_size: Standard_DS1_v2
+  admin_username: vikrant
+  admin_password: admin@123
+web_vms:
+- name: web-1
+  vm_size: Standard_B1s
+  admin_username: vikrant
+  admin_password: admin@123

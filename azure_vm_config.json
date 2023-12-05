@@ -1,0 +1,35 @@
+{
+  "resource_group": "rg1",
+  "location": "East US",
+  "virtual_network": "vnet-test",
+  "vnet_address_space": "10.0.0.0/16",
+  "subnet_app": "subnet-app",
+  "subnet_app_cidr": "10.0.1.64/26",
+  "subnet_web": "subnet-web",
+  "subnet_web_cidr": "10.0.1.0/26",
+  "web_vms": [
+        {
+            "name": "web-1",
+            "vm_size": "Standard_B1s",
+            "admin_username": "vikrant",
+            "admin_password": "admin@123"
+        }
+   ],
+  "app_vms": [
+        {
+            "name": "app-1",
+            "vm_size": "Standard_DS1_v2",
+            "admin_username": "vikrant",
+            "admin_password": "admin@123"
+
+            
+        },
+        {
+            "name": "app-2",
+            "vm_size": "Standard_DS1_v2",
+            "admin_username": "vikrant",
+            "admin_password": "admin@123"
+        }
+    ]
+
+}
